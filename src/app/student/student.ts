@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-student',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './student.html',
   styleUrl: './student.css',
 })
@@ -16,7 +17,7 @@ export class Student
     { name: "Paperina", city: "Paperopoli", gender: "F", isPresent: true},
     { name: "Gastone", city: "Paperopoli", gender: "M", isPresent: true},
     { name: "Minnie", city: "Topolinia", gender: "F", isPresent: false}
-    
-  ]
+
+  ];
 
 }
