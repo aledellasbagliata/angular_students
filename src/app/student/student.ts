@@ -24,4 +24,13 @@ export class Student
 
   ];
 
+  getStyle(student : any)
+  {
+    return {
+      'backgroundColor' : student.gender == 'F' ? this.FEMALE_COLOR : this.MALE_COLOR,
+      'textDecoration' : student.isPresent ? 'none' : "underline",
+      'fontWeight' : student.isPresent ? 'normal' : 'bold'
+    }
+  }
+
 }
