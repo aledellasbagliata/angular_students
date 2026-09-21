@@ -10,8 +10,12 @@ import { CommonModule} from '@angular/common';
 export class Student
 {
 
+    MALE_COLOR : string = 'lightblue';
+    FEMALE_COLOR : string = 'pink'
+
+
   students : any[] = [
-    
+
     { name: "Pippo", city: "Topolinia", gender: "M", isPresent: true},
     { name: "Pluto", city: "Topolinia", gender: "M", isPresent: false},
     { name: "Paperina", city: "Paperopoli", gender: "F", isPresent: true},
